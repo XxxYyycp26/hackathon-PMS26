@@ -12,13 +12,29 @@ There are helpers scripts for the following toolkits:
 
 The solutions can be visualized using the Python library `blockviz`...
 
-## Submitting solutions
 
-First, fork this git repository, or create a new git repository with a copy of the file `team.json` and the entire folder `solutions`, and send the link to clone this repository at hebrard@laas.fr.
+## Setting up your team repository and submitting solutions
+First, fork this git repository, or create a new git repository with a copy of the file `team.json` and the entire folder `solutions`, and send the link to clone this repository at hebrard@laas.fr. For instance, you can follow these steps:
 
-Then, fill the file `team.json` as follows:...
+1. Clone this repo
 
-Finally, when you find a new best solution for instance `dataset/x_y.csv` copy it (at the end of) the file `solutions/x_y.sol`, commit and push.
+> git clone https://gitlab.laas.fr/ROC/hackathon-pms-2026-game-packing
+
+2. Create an empty repository on any git platform (say git@github.com/me/A-team)
+
+3. push the team and solution files in your repo
+
+> cd hackathon-pms-2026-game-packing
+> git remote add team.json git@github.com/me/A-team
+> git remote add solutions git@github.com/me/A-team
+
+4. Fill the file `team.json` with the relevant information
+
+5. *When you find a new best solution*, copy it into the corresponding solution file and push into the corrsponding solution file, e.g., if this is a solution for `dataset/random_0005.csv`, copy it into `solutions/random_0005.json` and:
+
+> git commit -m "new solution" solutions/random_0005.json 
+> git push main
+
 
 
 ## Solving with Tempo
@@ -45,3 +61,5 @@ This program implements helpers to read the instances, print the solutions, and 
 
 
 ## Solving with Minizinc
+
+
