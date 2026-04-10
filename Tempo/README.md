@@ -2,7 +2,7 @@
 
 Prerequisite: cmake is installed
 1. Clone Tempo: `git clone https://gitlab.laas.fr/roc/emmanuel-hebrard/tempo.git`
-2. create a build folder and move into it (`mkdir build; cd build`)
+2.create a build folder at the root of Tempo's repo and move into it (`cd tempo; mkdir build; cd build`)
 3. run `cmake -DCMAKE_CXX_COMPILER=g++-11 -DCMAKE_BUILD_TYPE=release ..`
 4. run `make boxes`
 
